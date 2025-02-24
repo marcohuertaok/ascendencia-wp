@@ -1,0 +1,26 @@
+# Ignorar el núcleo de WordPress (opcional, si no quieres versionarlo completo)
+wp-admin/
+wp-includes/
+
+# Ignorar plugins (salvo que sea un plugin propio que quieras versionar)
+wp-content/plugins/
+
+# Ignorar la carpeta de subidas (archivos grandes, imágenes, etc.)
+wp-content/uploads/
+
+# Ignorar cachés, backups, archivos temporales y logs
+wp-content/cache/
+wp-content/upgrade/
+*.log
+*.sql
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ejemplo: si tienes un tema personalizado, NO lo ignores.
+# Digamos tu tema está en wp-content/themes/mi-tema/
+# Ignoramos todos los temas...
+wp-content/themes/*
+# ...¡menos el tuyo!
+!wp-content/themes/mi-tema/
